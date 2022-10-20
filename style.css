@@ -193,12 +193,12 @@ footer img:hover {
 }
 
 #presentation_picture {
-  width: 200px;
-  height: 234px;
+  height: 200px;
   float: left;
   box-shadow: 4px 6px 8px black;
   border-radius: 25px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 #my_description {
