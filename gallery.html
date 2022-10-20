@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Maxime Arnal website</title>
+  <meta property="og:site_name" content="Maxime Arnal website" />
+  <meta property="og:description" content="My professional website." />
+  <meta property="og:image" content="images/atom_logo_black.png">
+  <meta property="og:url" content="https://arnmax.github.io/">
+  <meta property="og:type" content="blog" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148962553-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148962553-1');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div id="banner">
+      <a href="index.html">
+        <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
+        <h1 id="main_title">Maxime Arnal</h1>
+        <h2 id="main_subtitle">PhD student</h2>
+      </a>
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_logo.svg" alt="Logo atome"></a>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a class="active disabledLink" href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <section id="gallery">
+
+      <p id="gallery_text">
+        Some personnal pictures (travel and night sky pictures) can be found on my <a target="_blank" href="https://www.flickr.com/photos/186192943@N07">Flickr page</a>. Some pictures of the cold atom experiment in Toulouse are shown here:
+      </p>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/gallery/manip1.JPG">
+          <div class="text">The experiment main table.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/gallery/manip2.JPG">
+          <div class="text">Some optics close to the vacuum chamber.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/gallery/manip3.JPG">
+          <div class="text">The vacuum chamber with cold atoms trapped (Magneto-Optical Trap).</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/gallery/manip4.JPG">
+          <div class="text">You can see by fluorescence a cloud of cold atoms (the orange mark in the middle of the picture). Their temperature is a few hundreds of millikelvins.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/gallery/team.JPG">
+          <div class="text">The cold atom team (sept. 2019). Left to right: Nathan Dupont, Gabriel Chatelain, Maxime Arnal, Juliette Billy, David Guéry-Odelin.</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer_logos">
+        <a href="http://www.linkedin.com/in/maxime-arnal-6a7241155" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
+        <a href="https://github.com/arnmax" target="_blank"><img id="github_logo" src="images/github_logo.png" alt="GitHub logo"></a>
+        <a href="https://www.flickr.com/photos/186192943@N07" target="_blank"><img id="flickr_logo" src="images/flickr_logo.png" alt="Flickr logo"></a>
+      </div>
+      <p id="footer_copyright">&copy Copyright: Maxime Arnal</p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

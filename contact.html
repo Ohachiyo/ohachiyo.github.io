@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Maxime Arnal website</title>
+  <meta property="og:site_name" content="Maxime Arnal website" />
+  <meta property="og:description" content="My professional website." />
+  <meta property="og:image" content="images/atom_logo_black.png">
+  <meta property="og:url" content="https://arnmax.github.io/">
+  <meta property="og:type" content="blog" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148962553-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148962553-1');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div id="banner">
+      <a href="index.html">
+        <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
+        <h1 id="main_title">Maxime Arnal</h1>
+        <h2 id="main_subtitle">PhD student</h2>
+      </a>
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_logo.svg" alt="Logo atome"></a>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active disabledLink" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <section id="contact">
+      <p>You can contact me by sending an email to <em>arnal at irsamc dot ups-tlse dot fr</em>.</p>
+
+      <p>Alternatively, you can find me in the lab at :</p>
+
+      <p>Laboratoire Collisions Agrégats Réactivité<br>
+        Université Paul Sabatier<br>
+        Bat. 3R1b4 - 118 route de Narbonne<br>
+        31062 Toulouse Cedex 09<br>
+        France</p>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5782.408227402876!2d1.465395208727108!3d43.56062977449093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc23c6bbc9b5%3A0x44ca64b71f158ca4!2sLaboratoire+Collisions!5e0!3m2!1sfr!2sus!4v1545859891289"
+          width="900" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
+    <footer>
+      <div id="footer_logos">
+        <a href="http://www.linkedin.com/in/maxime-arnal-6a7241155" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
+        <a href="https://github.com/arnmax" target="_blank"><img id="github_logo" src="images/github_logo.png" alt="GitHub logo"></a>
+        <a href="https://www.flickr.com/photos/186192943@N07" target="_blank"><img id="flickr_logo" src="images/flickr_logo.png" alt="Flickr logo"></a>
+      </div>
+      <p id="footer_copyright">&copy Copyright: Maxime Arnal</p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
