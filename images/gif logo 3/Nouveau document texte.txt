@@ -1,0 +1,1 @@
+magick -delay 10 -loop 0 -dispose previous *.png header_bkgnd.gif

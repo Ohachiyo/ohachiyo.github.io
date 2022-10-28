@@ -1,6 +1,6 @@
-/* General options */
+/*General options*/
 body {
-  font-family: Palatino, 'Times New Roman', Arial, sans-serif;
+  Font-family: "Times New Roman", Times, serif;
   font-size: large;
   color: black;
 }
@@ -11,8 +11,8 @@ body {
 }
 
 section {
-  /* border: 1px black solid; */
-  width: 900px;
+  /*border: 1px black solid;*/
+  width: 1200px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -40,37 +40,37 @@ p {
 }
 
 /******************************************************************************/
-/* header formatting */
+/*Header*/
+
 header {
-  background-image: url("images/header_bkgnd.jpg");
-  /* background-repeat: round; */
+  background-image: url("images/header_bkgnd3.png");
   background-position: center;
   background-size: cover;
-  height: 230px;
+  height: 250px;
   position: relative;
 }
 
 header div a {
-  background-color: rgba(110, 110, 110, 0.5);
+  background-color: rgba(110, 110, 110, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 230px;
+  height: 250px;
   text-decoration: none;
 }
 
 #main_title {
   position: absolute;
-  bottom: 35px;
-  color: white;
+  top: 30px;
+  color: #bbd6ff;
   font-style: oblique;
 }
 
 #main_subtitle {
   position: absolute;
-  bottom: 5px;
-  color: white;
+  bottom: 35px;
+  color: #bbd6ff;
 }
 
 #atom_logo {
@@ -78,26 +78,29 @@ header div a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 /******************************************************************************/
-/* navigation  */
+/*Navigation*/
+
 #navbar {
-  overflow: hidden;
-  background-color: #333;
+  /*overflow: hidden;*/
+  background-color: #444;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 #menu {
-  overflow: hidden;
-  background-color: #333;
+  /*overflow: hidden;*/
+  background-color: #444;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -106,25 +109,26 @@ header div a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 56px;
+  padding: 20px 30px;
   text-decoration: none;
 }
 
 #atom_logo_navbar {
   display: block;
-  padding: 0px 56px;
-  width: 40px;
-  height: 40px;
+  padding: 0px 30px;
+  width: 60px;
+  height: 60px;
 }
 
 #menu a.active {
-  background-color: #37377D;
+  background-color: #13366B;
   color: white;
 }
 
 /* Change the link color to #111 (black) on hover */
 #menu a:hover {
-  background-color: #111;
+  background-color: #DDDDDD;
+  color: black;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -150,13 +154,15 @@ header div a {
   cursor: default;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement*/
+/* (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.content {
   padding-top: 47px;
 }
 
 /******************************************************************************/
-/* Footer */
+/*Footer*/
+
 footer {
   display: flex;
   flex-direction: column;
@@ -178,6 +184,7 @@ footer img {
   filter: grayscale(100%) opacity(70%);
   margin-right: 5px;
   margin-left: 5px;
+  height: 30px;
 }
 
 footer img:hover {
@@ -186,7 +193,8 @@ footer img:hover {
 }
 
 /******************************************************************************/
-/* Home page*/
+/*Home*/
+
 #presentation {
   overflow: auto;
   margin-bottom: 20px;
@@ -224,7 +232,8 @@ aside {
 }
 
 /******************************************************************************/
-/* publications page */
+/*Publications*/
+
 #publications li {
   margin-top: 20px;
 }
@@ -237,11 +246,12 @@ aside {
 
 /******************************************************************************/
 /*CV*/
+
 table, td {
   border: none;
   border-collapse: collapse;
   text-align: left;
-  padding: 2px;
+  padding: 8px 8px;
   vertical-align: center;
 }
 
@@ -250,7 +260,7 @@ table div {
 }
 
 th {
-  border-bottom: 2px solid #dd8627;
+  border-bottom: 2px solid #4d4dff;
   border-collapse: collapse;
 }
 
@@ -261,10 +271,12 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #dfdfdf;
+  background-color: #dfdfff;
 }
 
-/* gallery */
+/******************************************************************************/
+/*Gallery*/
+
 #gallery_text {
   margin-bottom: 40px;
 }

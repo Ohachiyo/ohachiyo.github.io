@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>Lucas Gabardos' website</title>
-  <meta property="og:site_name" content="Lucas Gabardos' website" />
+  <link rel="icon" type="image/x-icon" href="images/atom_logo.svg">
+  <meta property="og:site_name" content="Lucas Gabardos's website" />
   <meta property="og:description" content="My professional website" />
-  <meta property="og:image" content="images/atom_logo_black.png">
+  <meta property="og:image" content="images/atom_logo.svg">
   <meta property="og:url" content="https://ohachiyo.github.io/">
   <meta property="og:type" content="website" />
-
 </head>
 
 <body>
@@ -18,7 +18,7 @@
   <header>
     <div id="banner">
       <a href="index.html">
-        <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
+        <img id="atom_logo" src="images/atom_small_opt.png" alt="atom logo">
         <h1 id="main_title">Lucas Gabardos</h1>
         <h2 id="main_subtitle">Postdoctoral researcher</h2>
       </a>
@@ -26,7 +26,7 @@
   </header>
 
   <nav id="navbar">
-    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_logo.svg" alt="Logo atome"></a>
+    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_small_opt.png" alt="atom logo"></a>
     <div id="menu">
       <a href="index.html">Home</a>
       <a href="CV.html">CV</a>
@@ -37,10 +37,64 @@
   </nav>
 
   <div class="content">
+  
     <section id="gallery">
 
       <p id="gallery_text">
-        Some personnal pictures (travel and night sky pictures) can be found on my <a target="_blank" href="https://www.flickr.com/photos/186192943@N07">Flickr page</a>. Some pictures of the cold atom experiment in Toulouse are shown here:
+        Rubidium BEC experiment at LCAR (Toulouse, France)
+      </p>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/gallery/manip1.JPG">
+          <div class="text">The experiment main table.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/gallery/manip2.JPG">
+          <div class="text">Some optics close to the vacuum chamber.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/gallery/manip3.JPG">
+          <div class="text">The vacuum chamber with cold atoms trapped (Magneto-Optical Trap).</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/gallery/manip4.JPG">
+          <div class="text">You can see by fluorescence a cloud of cold atoms (the orange mark in the middle of the picture). Their temperature is a few hundreds of millikelvins.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/gallery/team.JPG">
+          <div class="text">The cold atom team (sept. 2019). Left to right: Nathan Dupont, Gabriel Chatelain, Maxime Arnal, Juliette Billy, David Guéry-Odelin.</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+	  
+	  <p id="gallery_text">
+        Chromium BEC experiment at LPL (Villetaneuse, France)
       </p>
 
       <!-- Slideshow container -->
@@ -95,11 +149,12 @@
 
     <footer>
       <div id="footer_logos">
-        <a href="http://www.linkedin.com/in/maxime-arnal-6a7241155" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
-        <a href="https://github.com/arnmax" target="_blank"><img id="github_logo" src="images/github_logo.png" alt="GitHub logo"></a>
-        <a href="https://www.flickr.com/photos/186192943@N07" target="_blank"><img id="flickr_logo" src="images/flickr_logo.png" alt="Flickr logo"></a>
+        <a href="http://www.linkedin.com/in/lucasgabardos" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.svg" alt="LinkedIn logo"></a>
+        <a href="https://github.com/ohachiyo" target="_blank"><img id="github_logo" src="images/github_logo.svg" alt="GitHub logo"></a>
+        <a href="https://orcid.org/0000-0001-5420-0735" target="_blank"><img id="orcid_logo" src="images/orcid_logo.svg" alt="ORCID logo"></a>
+		<a href="https://scholar.google.com/citations?user=1Uc7RIYAAAAJ" target="_blank"><img id="googlescholar_logo" src="images/googlescholar_logo.svg" alt="Google Scholar logo"></a>
       </div>
-      <p id="footer_copyright">&copy Copyright: Maxime Arnal</p>
+      <p id="footer_copyright" style="font-size:85%;">&copy 2022 Lucas Gabardos</p>
     </footer>
 
   </div>

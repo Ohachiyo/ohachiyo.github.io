@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>Lucas Gabardos' website</title>
-  <meta property="og:site_name" content="Lucas Gabardos' website" />
+  <link rel="icon" type="image/x-icon" href="images/atom_logo.svg">
+  <meta property="og:site_name" content="Lucas Gabardos's website" />
   <meta property="og:description" content="My professional website" />
-  <meta property="og:image" content="images/atom_logo_black.png">
+  <meta property="og:image" content="images/atom_logo.svg">
   <meta property="og:url" content="https://ohachiyo.github.io/">
   <meta property="og:type" content="website" />
-
 </head>
 
 <body>
@@ -18,7 +18,7 @@
   <header>
     <div id="banner">
       <a href="index.html">
-        <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
+        <img id="atom_logo" src="images/atom_small_opt.png" alt="atom logo">
         <h1 id="main_title">Lucas Gabardos</h1>
         <h2 id="main_subtitle">Postdoctoral researcher</h2>
       </a>
@@ -26,7 +26,7 @@
   </header>
 
   <nav id="navbar">
-    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_logo.svg" alt="Logo atome"></a>
+    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_small_opt.png" alt="atom logo"></a>
     <div id="menu">
       <a href="index.html">Home</a>
       <a class="active disabledLink" href="CV.html">CV</a>
@@ -37,34 +37,47 @@
   </nav>
 
   <div class="content">
+  
     <section id="cv">
-      <p>Here you can find a <a target="_blank" href="Docs/CVshort.pdf">short CV</a> and a <a target="_blank" href="Docs/CVlong.pdf">more detailed one</a> (both in french). A summary is also provided below:
+	
+      <p>Here is a summary of my CV for which <a target="_blank" href="Docs/CV_Gabardos.pdf">a more detailed version</a> is available.
 
         <table style="width:100%">
+		  <tr>
+            <th class="theader">WORK</th>
+            <th></th>
+            <th></th>
+          </tr>
+		  <tr>
+            <td>2020 - 2022</td>
+            <td>Postdoc<br>
+			  <div>Laboratoire Collisions Agrégats Réactivité - Cold Atoms team</div>
+			</td>
+            <td>Toulouse, France</td>
+          </tr>
           <tr>
             <th class="theader">EDUCATION</th>
             <th></th>
             <th></th>
           </tr>
           <tr>
-            <td>2017-2020 (expected)</td>
-            <td>PhD in quantum Physics</td>
-            <td>LCAR - Toulouse, France</td>
+            <td>2016 - 2020</td>
+            <td>PhD in Quantum Physics (<a target="_blank" href="Docs/These_Gabardos.pdf">Thesis</a>, in French)<br>
+			  <div>Laboratoire de Physique des Lasers - Magnetic Quantum Gases team<br>
+			  Subject: Out-of-equilibrium dynamics of spins coupled by dipolar interactions<br>
+                Supervisors: Bruno Laburthe-Tolra and Laurent Vernac</div>
+			</td>
+            <td>Université Sorbonne Paris Nord, Villetaneuse, France</td>
           </tr>
           <tr>
-            <td>2015-2017</td>
-            <td>MSc in fundamental Physics
-              <div>With high honours<br>
-                Rank: 1<sup>st</sup></div>
-            </td>
-            <td>Université Paul Sabatier - Toulouse, France</td>
+            <td>2014 - 2016</td>
+            <td>MSc in Quantum Devices</td>
+            <td>Université Paris Diderot, Paris, France</td>
           </tr>
           <tr>
-            <td>2012-2015</td>
-            <td>BSc in Physics<br>
-              <div>With high honours</div>
-            </td>
-            <td>Université Paul Sabatier - Toulouse, France</td>
+            <td>2013 - 2014</td>
+            <td>BSc in Fundamental Physics</td>
+            <td>Université Paris Diderot, Paris, France</td>
           </tr>
 
           <tr>
@@ -73,91 +86,68 @@
             <th></th>
           </tr>
           <tr>
-            <td>Feb. 2017 - June 2017</td>
-            <td>Cold Atoms team<br>
-              <div>Subject: Bose Einstein condensate in a 1D phase-modulated optical lattice<br>
-                Supervisors: David Guéry-Odelin and Juliette Billy</div>
+            <td>Mar - Jun 2016</td>
+            <td>Laboratoire de Physique des Lasers - Magnetic Quantum Gases team<br>
+              <div>Subject: Preparation of the internal state of <sup>53</sup>Cr atoms through magnetic dipolar transitions between hyperfine levels of their fundamental state (<a target="_blank" href="Docs/Rapport_LPL_Gabardos.pdf">Dissertation</a>, in French)<br>
+                Supervisor: Laurent Vernac</div>
             </td>
-            <td>LCAR - Toulouse, France</td>
+            <td>Villetaneuse, France</td>
           </tr>
           <tr>
-            <td>Apr. 2016 - June 2016</td>
-            <td>Anderson Optical Physics<br>
-              <div>Subject: Atomic interferometer optimisation using a genetic algorithm<br>
-                Supervisor: Dana Anderson</div>
+            <td>Jun - Jul 2016</td>
+            <td>Laboratoire Kastler Brossel - Trapped Ions team<br>
+              <div>Subject: Study of a 626 nm DBR diode laser for cooling beryllium ions as part of a H<sub>2</sub><sup>+</sup> metrology experiment (<a target="_blank" href="Docs/Rapport_LKB_Gabardos.pdf">Dissertation</a>, in French)<br>
+                Supervisors: Jean-Philippe Karr and Laurent Hilico</div>
             </td>
-            <td>JILA - Boulder (CO), USA</td>
+            <td>Paris, France</td>
           </tr>
           <tr>
-            <td>Feb. 2015 - May 2015</td>
-            <td>Experimental Quantum Optics and Photonics<br>
-              <div>Coherent Population Trapping in a Rb vapour cell for atomic clocks<br>
-                Supervisors: Paul Griffin and Aidan Arnold</div>
+            <td>Jun - Jul 2014</td>
+            <td>Laboratoire Matériaux et Phénomènes Quantiques - Trapped Ions and Quantum Information team<br>
+              <div>Study of the heating rate of an ion trapped in a planar Paul microtrap through the analysis of its fluorescence dynamics (<a target="_blank" href="Docs/Rapport_MPQ_Gabardos.pdf">Dissertation</a>, in French)<br>
+                Supervisor: Luca Guidoni</div>
             </td>
-            <td>University of Strathclyde - Glasgow, UK</td>
+            <td>Paris, France</td>
           </tr>
 
           <tr>
-            <th class="theader" colspan="3">TALKS AND POSTERS</th>
+            <th class="theader" colspan="3">POSTERS</th>
             <th></th>
             <th></th>
           </tr>
           <tr>
-            <td>May 2019</td>
-            <td>NanoX Days<br>
-              <div>Poster: Bose Einstein condensate in a 1D time-dependent periodic potential</div>
+            <td>Jul 2022</td>
+            <td>Congrès de la Société Français d'Optique (<a href="https://www.sfoptique.org/pages/sfo/congres-optique/optique-nice-2022/" target="_blank">OPTIQUE Nice 2022</a>)<br>
+              <div>Poster: <a target="_blank" href="Docs/Poster_OPTIQUE_Nice2022_Gabardos.pdf">Contrôle optimal de l’état quantique d’un condensat de Bose-Einstein dans un réseau optique</a></div>
             </td>
-            <td>Toulouse, France</td>
+            <td>Nice, France</td>
           </tr>
           <tr>
-            <td>Apr. 2019</td>
-            <td>13<sup>th</sup> European Conference on Atoms, Molecules and Photons (<a href="https://www.ecamp13.org/" target="_blank">ECAMP13</a>)<br>
-              <div>Poster: Bose Einstein condensate in a 1D time-dependent periodic potential</div>
+            <td>Jul 2018</td>
+            <td>26<sup>th</sup> International Conference on Atomic Physics (<a href="https://icap2018.eu/" target="_blank">ICAP2018</a>)<br>
+              <div>Poster: <a target="_blank" href="Docs/Poster_ICAP2018_Gabardos.pdf">Collective modes and quantum thermalisation with tilted dipoles</a></div>
             </td>
-            <td>Florence, Italy</td>
+            <td>Barcelona, Spain</td>
           </tr>
           <tr>
-            <td>Dec. 2018</td>
-            <td>GDF Interférométrie atomique (<a href="https://gdraf.sciencesconf.org/" target="_blank">GDR Interfero</a>)<br>
-              <div>Poster: Bose Einstein condensate in a 1D optical lattice : from perturbative modulation to chaotic regime</div>
+            <td>Jul 2017</td>
+            <td>23<sup>rd</sup> Young Atom Opticians conference (<a href="https://yao2017.lkb.ens.fr/" target="_blank">YAO 2017</a>)<br>
+              <div>Poster: <a target="_blank" href="Docs/Poster_YAO2017_Gabardos.pdf">Spin mixing and protection of ferromagnetism in a spinor dipolar condensate</a></div>
             </td>
-            <td>Toulouse, France</td>
+            <td>Paris, France</td>
           </tr>
-          <tr>
-            <td>Jul. 2018</td>
-            <td>Congrès de la Société Française d'Optique (<a href="https://www.sfoptique.org/pages/congres-optique/optique-toulouse-2018/" target="_blank">SFO</a>)<br>
-              <div>Talk: Bose Einstein condensate in modulated optical lattice: resonant driving and depth renormalisation</div>
-            </td>
-            <td>Toulouse, France</td>
-          </tr>
-          <tr>
-            <td>June 2018</td>
-            <td>Yong Atom Opticians (<a href="http://yao2018.phys.strath.ac.uk/" target="_blank">YAO 2018</a>)<br>
-              <div>Poster: Bose Einstein condensate in a 1D optical lattice : from perturbative modulation to chaotic regime</div>
-            </td>
-            <td>Glasgow, UK</td>
-          </tr>
-          <tr>
-            <td>Oct. 2017</td>
-            <td>Les Houches predoctoral school (<a href="https://coldatoms2017.sciencesconf.org/" target="_blank">Cold atoms and quantum transport</a>)<br>
-              <div>Poster: Chaos Assisted Tunneling</div>
-            </td>
-            <td>Les Houches, France</td>
-          </tr>
-
         </table>
 
-
-        <p>For my list of publications see <a href="publications.html">here</a></p>.
     </section>
 
     <footer>
       <div id="footer_logos">
-        <a href="http://www.linkedin.com/in/maxime-arnal-6a7241155" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
-        <a href="https://github.com/arnmax" target="_blank"><img id="github_logo" src="images/github_logo.png" alt="GitHub logo"></a>
-        <a href="https://www.flickr.com/photos/186192943@N07" target="_blank"><img id="flickr_logo" src="images/flickr_logo.png" alt="Flickr logo"></a>
+        <a href="http://www.linkedin.com/in/lucasgabardos" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.svg" alt="LinkedIn logo"></a>
+        <a href="https://github.com/ohachiyo" target="_blank"><img id="github_logo" src="images/github_logo.svg" alt="GitHub logo"></a>
+        <a href="https://orcid.org/0000-0001-5420-0735" target="_blank"><img id="orcid_logo" src="images/orcid_logo.svg" alt="ORCID logo"></a>
+		<a href="https://scholar.google.com/citations?user=1Uc7RIYAAAAJ" target="_blank"><img id="googlescholar_logo" src="images/googlescholar_logo.svg" alt="Google Scholar logo"></a>
       </div>
-      <p id="footer_copyright">&copy Copyright: Maxime Arnal</p>
+      <p id="footer_copyright" style="font-size:85%;">&copy 2022 Lucas Gabardos</p>
     </footer>
 
   </div>
