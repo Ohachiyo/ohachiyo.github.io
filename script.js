@@ -25,29 +25,66 @@ function myFunction() {
 }
 
 // gallery slide
-var slideIndex = 1;
-showSlides(slideIndex);
+document.querySelectorAll('.slideshow-container').forEach(container => {
+  let slides = container.querySelectorAll('.slide');
+  let dotsContainer = container.querySelector('.dots');
+  let index = 0;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  // Create dots
+  slides.forEach((_, i) => {
+    let dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => {
+      index = i;
+      showSlide();
+    });
+    dotsContainer.appendChild(dot);
+  });
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  let dots = dotsContainer.querySelectorAll('.dot');
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  function showSlide() {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+
+  showSlide();
+
+  // Arrow controls
+  container.querySelector('.prev').onclick = () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide();
+  };
+
+  container.querySelector('.next').onclick = () => {
+    index = (index + 1) % slides.length;
+    showSlide();
+  };
+
+  // Touch swipe support
+  let startX = 0;
+
+  container.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  container.addEventListener('touchend', e => {
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // Swipe left → next
+        index = (index + 1) % slides.length;
+      } else {
+        // Swipe right → prev
+        index = (index - 1 + slides.length) % slides.length;
+      }
+      showSlide();
+    }
+  });
+});
